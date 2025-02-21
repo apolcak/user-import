@@ -1,0 +1,57 @@
+.separator {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0.5rem 1rem;
+	margin-bottom: 1rem;
+
+	input {
+		width: 40px;
+	}
+}
+
+.dropzone {
+	border: 2px dashed;
+	padding: 2rem;
+	cursor: pointer;
+	text-align: center;
+}
+
+.uploaded-file {
+	&__heading {
+		margin-bottom: 0.5rem;
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 0.5rem;
+
+		i {
+			max-width: 200px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			color: var(--green);
+		}
+	}
+	&__remove {
+		$size: 1.2rem;
+
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: $size;
+		height: $size;
+		padding: 0;
+		border: none;
+		border-radius: 50%;
+		background-color: transparent;
+		font-size: 0.6rem;
+		transition: background 0.15s ease;
+
+		&:hover {
+			background-color: #fff;
+		}
+	}
+}

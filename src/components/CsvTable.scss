@@ -1,0 +1,43 @@
+.table-wrapper {
+	width: 100%;
+	overflow-x: scroll;
+	border: 1px solid;
+}
+
+table {
+	$input-spacing: 4px;
+	$cell-inline-spacing: 2px;
+
+	border-collapse: collapse;
+
+	th,
+	td {
+		width: calc(100% / 6);
+		text-align: left;
+		padding: 2px 4px;
+	}
+
+	th {
+		padding-inline: #{$cell-inline-spacing + $input-spacing};
+	}
+
+	thead {
+		background-color: var(--light-violet);
+	}
+
+	tr {
+		&:nth-child(even) {
+			background-color: var(--gray);
+		}
+	}
+
+	input {
+		border: 0;
+		padding: $input-spacing;
+		background-color: transparent;
+
+		&:focus {
+			outline: 2px solid var(--violet);
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.overview {
+	width: min(450px, 100%);
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+	background-color: var(--gray);
+
+	&__row {
+		$gap: 2rem;
+
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 0.4rem $gap;
+		border-bottom: 1px dotted;
+		padding-bottom: 0.2rem;
+		margin-bottom: 0.5rem;
+
+		> * {
+			width: calc(50% - #{$gap} / 2);
+		}
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+			align-items: flex-start;
+			margin-bottom: 1rem;
+
+			> * {
+				width: 100%;
+				text-align: left;
+			}
+		}
+	}
+}

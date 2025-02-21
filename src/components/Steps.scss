@@ -1,0 +1,27 @@
+.steps {
+	width: min(350px, 100%);
+	margin-inline: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.step {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	padding: 1rem;
+	border: 2px solid;
+	border-radius: 50%;
+
+	&.active {
+		background: var(--light-violet);
+		color: var(--violet);
+	}
+
+	&:last-child {
+		display: none;
+	}
+}
