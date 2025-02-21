@@ -1,8 +1,10 @@
-# React + Vite
+# User import app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app is multistep wizard for submitting users data.
 
-Currently, two official plugins are available:
+1. At first step user fills import name and a note.
+2. In second step uploads an csv file.
+3. In third step is user able to edit his data from uploaded file. Data are represented in table. He also sees, which cells are not valid.
+4. I fourth step is just import overview and user is able to "submit" data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+State: _props_ and _Context api_.
