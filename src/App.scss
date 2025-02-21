@@ -1,0 +1,30 @@
+#root {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.wizard {
+	width: min(800px, 90%);
+
+	&__inner {
+		padding: 2rem;
+		margin-bottom: 2rem;
+		border: 2px solid var(--violet);
+
+		@media (max-width: 500px) {
+			padding: 2rem 1rem;
+		}
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}

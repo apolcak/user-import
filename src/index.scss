@@ -1,0 +1,77 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	--violet: #6200ff;
+	--light-violet: #d7beff;
+	--green: #00b600;
+	--dark: #000;
+	--light: #fff;
+	--error: #ffacac;
+	--gray: #efefef;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+button {
+	background-color: var(--light-violet);
+	border-radius: 8px;
+	border: 2px solid var(--violet);
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	cursor: pointer;
+	transition: background-color 0.25s;
+
+	&:not([disabled]) {
+		&:hover {
+			background-color: var(--violet);
+			color: var(--light);
+		}
+	}
+
+	&[disabled] {
+		filter: grayscale(1);
+		opacity: 0.6;
+		cursor: not-allowed;
+	}
+}
+
+input,
+textarea {
+	border: 1px solid var(--dark);
+}
+
+textarea {
+	font-family: inherit;
+}
+
+.ta {
+	&-r {
+		text-align: right;
+	}
+}
+
+.is {
+	&-invalid {
+		background-color: var(--error);
+	}
+}
